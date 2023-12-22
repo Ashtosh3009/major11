@@ -6,4 +6,4 @@ You can try clicking this link if you want to to the Number Plate Recogntion<br>
 
 For Lane Detection :<br>
 https://colab.research.google.com/drive/1IMcsUeXS_tVKGoFZXiB4JeoVPgATknKF#scrollTo=twcSHvJyKY19<br>
-You can try clicking this link if you want to to the Number Plate Recogntion<br><br>
+You can try clicking this link if you want to to the Lane Detection<br><br>
