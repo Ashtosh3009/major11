@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="hero">
+    <nav>
+        <img src="images/menu.png" class="menu-img">
+        <img src="images/logo.jpeg" class="logo">
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+<div class="container">
+    <div class="bcol">
+      <div class="box">
+        <a href="OBJ.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-decoration: none;">Object Detection<br><br>AND<br><br>Lane Detection</a><br>
+      </div>
+    </div>
+    
+    <div class="bcol">
+      <div class="box">
+        <!--<label for="uploadBtn">Number Plate Recognition</label><br>-->
+        <a href="OCR.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;  margin-bottom: 30px;
+        text-decoration: none;">Number Plate Recognition<br><br>AND<br><br>Optical Character Recognition</a><br>
+      </div>
+    </div>
+    
+    <div class="bcol">
+      <div class="box">
+       
+        <a href="HAND.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;  margin-bottom: 30px;
+        text-decoration: none;">Body Posture Detection<br><br>AND<br><br>Hand Gesture Recognition</a><br>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="hero">
+    <div class="pos_cen">
+        <h2 style="text-align: center;margin-top: 10px; margin-bottom: 10px; font-size: 50px;">Body Posture Detection</h2>
+        <img class="img_deg" src="images/Body.png" style="margin-left: 20px;">
+        <p>Body posture detection, a cutting-edge application of computer vision and machine learning, has emerged as a transformative technology with diverse applications across various fields. This innovative system involves the analysis and interpretation of human body positions and movements using digital imaging. By harnessing advanced algorithms, cameras, and sensors, body posture detection enables real-time monitoring and recognition of specific poses or gestures. This technology finds practical use in sectors such as healthcare, sports, security, and human-computer interaction. Whether assessing physical rehabilitation progress, enhancing athletic performance, ensuring public safety, or refining user experience in virtual environments, body posture detection holds the promise of revolutionizing how we interact with technology and understand human behavior. The sophistication of this technology underscores its potential to contribute significantly to fields that require precise and dynamic insights into human posture and movement.</p>
+        <input type="file" id="uploadBtn">
+        <label for="uploadBtn">Upload File</label>
+    </div>
+</div>
+
+<div class="hero" style="max-height: 10px;">
+  <div class="pos_cen">
+      <h2 style="text-align: center; margin-top: 10px;  margin-bottom: 10px; font-size: 50px;">Hand Gesture Recognition</h2>
+      <img class="img_deg" src="images/HAND.png" style="margin-left: 20px; width: 400px; height: 400px;">
+      </video>
+      <p>Hand gesture recognition is a technology that interprets human hand movements and poses for various applications. It involves capturing and analyzing hand gestures using cameras and sensors. Hand gestures can be a natural and intuitive way to interact with devices, especially in augmented reality, virtual reality, and gaming. It has applications in sign language translation, controlling smart devices, and even in healthcare for non-contact interactions. Deep learning techniques, like convolutional neural networks (CNNs) and recurrent neural networks (RNNs), have improved the accuracy of hand gesture recognition systems. However, challenges remain in handling complex gestures and ensuring real-time responsiveness for seamless human-computer interaction.</p>        <input type="file" id="uploadBtn">
+      
+      <a href="https://frsccn-3000.csb.app/">Upload</a>
+  </div>
+</div>
+
+
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html>

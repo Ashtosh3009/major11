@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="hero">
+    <nav>
+        <img src="images/menu.png" class="menu-img">
+        <img src="images/logo.jpeg" class="logo">
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+<div class="container">
+    <div class="bcol">
+      <div class="box">
+        <a href="OBJ.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-decoration: none;">Object Detection<br><br>AND<br><br>Lane Detection</a><br>
+      </div>
+    </div>
+    
+    <div class="bcol">
+      <div class="box">
+        <!--<label for="uploadBtn">Number Plate Recognition</label><br>-->
+        <a href="OCR.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;  margin-bottom: 30px;
+        text-decoration: none;">Number Plate Recognition<br><br>Optical Character Recognition<br><br>Edge & Contour Detection </a><br>
+      </div>
+    </div>
+    
+    <div class="bcol">
+      <div class="box">
+       
+        <a href="HAND.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;  margin-bottom: 30px;
+        text-decoration: none;">Body Posture Detection<br><br>AND<br><br>Hand Gesture Recognition</a><br>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="hero">
+    <div class="pos_cen">
+        <h2 style="text-align: center;margin-top: 10px; margin-bottom: 10px; font-size: 50px;">Object Detection</h2>
+        <img class="img_deg" src="images/OD.png" style="margin-left: 20px;">
+        <p>"Object detection, a vital computer vision task, identifies and locates objects in images or video. It combines object classification and precise localization by drawing bounding boxes. It finds applications in autonomous vehicles, surveillance, facial recognition, and more. Deep learning, particularly CNNs, has revolutionized object detection with models like Faster R-CNN and YOLO. Large datasets such as COCO and Pascal VOC aid model training. Challenges include object variability and real-time processing requirements. Ethical concerns, particularly in surveillance and facial recognition, are prominent. Object detection continually evolves with more accurate and efficient models, contributing to the development of AI and computer vision applications."</p>
+        <input type="file" id="uploadBtn">
+        <a href="http://localhost:3000/rundev">Upload</a>
+    </div>
+</div>
+
+<div class="hero" style="max-height: 10px;">
+    <div class="pos_cen">
+        <h2 style="text-align: center; margin-top: 10px;  margin-bottom: 10px; font-size: 50px;">Lane Detection</h2>
+        <video controls muted loop src="images/LaneDetection.mp4" class="img_deg" style="margin-left: 20px; width: 400px; height: 400px; margin-top: -5%;">
+        <source src="images/LaneDetection.mp4">
+        This browser does not support HTML5
+        </video>
+        <p style="margin-top: 50px ;">Lane detection is a critical component of modern computer vision systems, particularly in the field of autonomous vehicles and advanced driver-assistance systems (ADAS). It involves the identification and tracking of lanes on a road, enabling vehicles to navigate safely within their designated paths. The primary objective of lane detection is to enhance situational awareness, providing real-time information about lane boundaries to assist in tasks such as lane-keeping and adaptive cruise control. By leveraging image processing and machine learning techniques, lane detection algorithms analyze visual data from onboard cameras, detecting lane markings and extrapolating the vehicle's position within the roadway. This technology plays a pivotal role in advancing the capabilities of intelligent transportation systems, contributing to the development of safer and more efficient modes of transportation.</p>
+        <label for="uploadBtn">Upload File</label>
+    </div>
+</div>
+
+
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html>

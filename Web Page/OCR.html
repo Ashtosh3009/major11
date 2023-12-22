@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="hero">
+    <nav>
+        <img src="images/menu.png" class="menu-img">
+        <img src="images/logo.jpeg" class="logo">
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href=""></a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+<div class="container">
+    <div class="bcol">
+      <div class="box">
+        <a href="OBJ.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-decoration: none;">Object Detection<br><br>AND<br><br>Lane Detection</a><br>
+      </div>
+    </div>
+    
+    <div class="bcol">
+      <div class="box">
+        <!--<label for="uploadBtn">Number Plate Recognition</label><br>-->
+        <a href="OCR.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;  margin-bottom: 30px;
+        text-decoration: none;">Number Plate Recognition<br><br>Optical Character Recognition<br><br>Edge & Contour Detection </a><br>
+      </div>
+    </div>
+    
+    <div class="bcol">
+      <div class="box">
+       
+        <a href="HAND.html" style="display: inline-block;
+        text-transform: none;
+        color: #fff;
+        background: #00986f;
+        text-align: center;
+        padding: 14px 40px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        user-select: none;
+        cursor: pointer;
+        box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 30px;
+        margin-top: 30px;  margin-bottom: 30px;
+        text-decoration: none;">Body Posture Detection<br><br>AND<br><br>Hand Gesture Recognition</a><br>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="hero">
+    <div class="pos_cen">
+        <h2 style="text-align: center;margin-top: 10px; margin-bottom: 10px; font-size: 50px;">Optical Character Recognition</h2>
+        <img class="img_deg" src="images/OCR.jpeg" style="margin-left: 20px;">
+        <p>Optical Character Recognition (OCR) represents a transformative technology that bridges the gap between the analog and digital worlds. At its core, OCR is a sophisticated mechanism within the domain of computer vision, designed to convert printed or handwritten text into machine-readable data. This process involves the analysis of images, scanned documents, or photographs to extract and interpret text characters, making the information accessible for computational applications. The applications of OCR are diverse and far-reaching, ranging from digitizing printed documents for efficient archival and retrieval to enabling text recognition in mobile applications. This technology has profound implications for streamlining administrative tasks, enhancing accessibility for visually impaired individuals, and facilitating the integration of printed text into the digital landscape. As OCR continues to evolve with advancements in artificial intelligence and image processing, its role in automating data entry, improving information accessibility, and fostering digital transformation becomes increasingly indispensable in our interconnected and data-driven world.</p>
+        <input type="file" id="uploadBtn">
+        <label for="uploadBtn">Upload File</label>
+    </div>
+</div>
+
+<div class="hero" style="max-height: 10px;">
+    <div class="pos_cen">
+        <h2 style="text-align: center; margin-top: 10px;  margin-bottom: 10px; font-size: 50px;">Number Plate Recognition</h2>
+        <img class="img_deg" src="images/NPR.jpeg" style="margin-left: 20px;">
+        <p style="margin-top: 50px ;">Number Plate Detection, a pivotal application in the domain of computer vision and image processing, involves the automated recognition and extraction of license plate information from images or video streams. This technology harnesses advanced algorithms to analyze visual data captured by cameras, enabling the identification of alphanumeric characters on vehicle license plates. Number Plate Detection finds widespread use in various fields, including law enforcement, parking management, and traffic monitoring.
+
+          The primary objective of this technology is to enhance security, streamline administrative processes, and improve overall efficiency in traffic management systems. In law enforcement, it aids in the identification of vehicles involved in criminal activities or traffic violations, contributing to public safety. Automated toll collection systems leverage number plate detection to streamline transactions and reduce congestion at toll booths. Additionally, parking facilities use this technology for efficient management, automating entry and exit processes and optimizing space utilization.
+          
+          Number Plate Detection systems typically employ optical character recognition (OCR) algorithms to extract and interpret the alphanumeric characters on license plates accurately. The integration of machine learning techniques further enhances the system's ability to adapt to various environmental conditions and diverse plate formats.
+          
+          As technology continues to evolve, Number Plate Detection plays a crucial role in shaping smart city initiatives, fostering safer roads, and contributing to the development of intelligent transportation systems. While concerns related to privacy and data security exist, responsible implementation of these systems can significantly improve traffic management, reduce manual intervention, and enhance overall urban mobility.</p>
+        <label for="uploadBtn">Upload File</label>
+    </div>
+</div>
+
+<div class="hero" style="max-height: 10px;">
+  <div class="pos_cen">
+      <h2 style="text-align: center; margin-top: 10px;  margin-bottom: 10px; font-size: 50px;">Edge and Contour Detection</h2>
+      <img class="img_deg" src="images/Edge.jpeg" style="margin-left: 20px;">
+      <p style="margin-top: 50px;">Edge detection involves identifying points in an image where significant changes in intensity occur, highlighting boundaries or edges. Common algorithms like Sobel, Canny, and Laplacian of Gaussian are employed for this purpose. Contour detection, closely related to edge detection, focuses on outlining object boundaries. Techniques like OpenCV's findContours, active contour models, and gradient vector flow help identify and represent these boundaries. Together, edge and contour detection are vital in computer vision for tasks such as object recognition, image segmentation, and medical imaging, providing key information for understanding and analyzing image structures.</p>
+      <label for="uploadBtn">Upload File</label>
+  </div>
+</div>
+
+
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+</body>
+</html>
